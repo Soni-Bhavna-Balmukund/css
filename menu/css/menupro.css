@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+.flex{
+    display: flex;
+}
+
+ul li{
+    list-style-type: none;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 10px;  
+    display: block;
+}
+
+.menu{
+    background-color: violet;
+    position: relative;
+    width: 600px;
+}
+
+.sub-menu1{
+    background-color: turquoise;
+    display: none;
+    position: absolute;
+}
+.menu1:hover .sub-menu1{
+display: block;
+}
+.menu2{
+    position: relative;
+}
+.sub-menu2{
+    display: none;
+    position: absolute;
+    left: 98%;
+    top: -8px;
+    background-color: cadetblue;
+}
+.menu2:hover .sub-menu2{
+    display: block;
+}
+
+.menu3{
+    position: relative;
+}
+.sub-menu3{
+    background-color: antiquewhite;
+    position: absolute;
+    left: 98%;
+   top: -8px;
+    display: none;
+}
+
+.menu3:hover .sub-menu3{
+    display: block;
+}
+
+.menu4{
+    position: relative;
+}
+.sub-menu4{
+    display: none;
+    position: absolute;
+    left: 98%;
+    top: -8px;
+    background-color:chartreuse;
+}
+.menu4:hover .sub-menu4{
+    display: block;
+}
+
+.menu5{
+    position: relative;
+}
+
+.sub-menu5{
+    display: none;
+    position: absolute;
+    top: -8px;
+    left: 98%;
+    background-color: thistle;
+}
+
+.menu5:hover .sub-menu5{
+    display: block;
+}
+
+.menu6{
+    position: relative;
+}
+
+.sub-menu6{
+    position: absolute;
+    background-color: teal;
+    top: -8px;
+    right: 98%;
+    display: none;
+}
+
+.menu6:hover .sub-menu6{
+    display: block;
+}
+
+.menu7{
+    position: relative;
+}
+
+.sub-menu7{
+    position: absolute;
+    background-color: seashell;
+    top: -8px;
+    right: 98%;
+    display: none;
+}
+
+li a:hover{
+    color:blue;
+}
+
+.menu7:hover .sub-menu7{
+    display: block;
+}

@@ -1,0 +1,10 @@
+@import 'animate.css';
+
+.div1{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(red,green);
+
+    animation: bounce;
+    animation-duration: 2s;
+}

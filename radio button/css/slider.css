@@ -1,0 +1,81 @@
+.flex{
+    display: flex;
+}
+
+.container{
+    position: relative;
+}
+/* 
+.radio1 input{
+    visibility: hidden;
+    display: none;
+} */
+
+
+.lables{
+    position: absolute;
+    z-index: 999;
+
+    top:90%;
+    left:50%;
+
+    transform: translateX(-50%);
+}
+
+.box{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 50%;
+    cursor: pointer;
+    margin: 5px;
+    display: block;
+    transition: all 0.5s ease-in-out;
+}
+
+.slider1{
+    width: 100%;
+    height: 800px;
+
+    /* object-fit: contain; */
+    overflow: hidden;
+
+    position: relative;
+}
+
+.img{
+    width: 100%;
+    height: 800px;
+
+    position: absolute;
+
+    display: none;
+    
+    opacity: 0%;
+    
+    /* z-index: 998; */
+    
+}
+.img1{
+    transition: opacity 0.5s ease-in-out;
+    
+}
+    
+input:nth-child(1):checked ~ .lables label:nth-child(1),
+input:nth-child(2):checked ~ .lables label:nth-child(2),
+input:nth-child(3):checked ~ .lables label:nth-child(3),
+input:nth-child(4):checked ~ .lables label:nth-child(4),
+input:nth-child(5):checked ~ .lables label:nth-child(5){
+    width: 30px;
+    opacity: 100%;
+}
+
+input:nth-child(1):checked ~ .img1,
+input:nth-child(2):checked ~ .img2,
+input:nth-child(3):checked ~ .img3,
+input:nth-child(4):checked ~ .img4,
+input:nth-child(5):checked ~ .img5{
+    display: block;
+    opacity: 100%;
+}

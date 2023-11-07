@@ -1,0 +1,33 @@
+.flex{
+    display: flex;
+}
+
+ul{
+    list-style-type:none;
+    background-color: aqua;
+}
+
+ul li a{
+    padding: 10px;
+    display: block;
+}
+
+.menu{
+    position: relative;
+}
+
+.sub-menu{
+    background-color:burlywood;
+    position: absolute;
+    display: none;
+
+}
+
+.test:hover{
+    background-color: blueviolet;
+}
+
+.test:hover .sub-menu{
+    display: block;
+    
+}

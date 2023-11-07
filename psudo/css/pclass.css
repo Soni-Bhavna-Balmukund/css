@@ -1,0 +1,231 @@
+.example:link{
+    /* color: black; */
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.example:active{
+    color: red;
+    border-color: green;
+}
+
+input[type="text"]:enabled{
+    border: 3px dotted red;
+}
+
+input[type="text"]:read-only{
+    border: 3px dotted green    ;
+}
+
+input[type="password"]:required{
+    border: 3px dotted blueviolet    ;
+}
+
+input:optional{
+    background-color: blue;
+}
+
+input[type=email]:valid{
+    background-color: khaki;
+}
+
+input[type=email]:invalid{
+    background-color: red;
+}
+
+input:focus{
+    border: 10px groove green;
+}
+
+.table{
+    border: 1px solid black;
+}
+
+/* !first-of-type and first-child both are same both will work same and same as for last-child and last-of-type */
+/* tr:first-child{
+    color: blueviolet;
+} */
+
+/* tr:first-of-type{
+    color: blueviolet;
+}
+
+tr:last-child{
+    color: rgb(39, 187, 175);
+} */
+
+/* !this is for tr and td */
+
+/* tr:nth-child(2){
+    color: rgb(201, 102, 102);
+}
+td:nth-child(2){
+    color: rgb(123, 102, 201);
+} */
+
+/* !for odd even  */
+
+/* tr:nth-child(odd){
+    color: rgb(201, 102, 102);
+}
+td:nth-child(even){
+    color: rgb(123, 102, 201);
+} */
+
+/* !for an+b */
+/* tr:nth-child(2n+2){
+    color: rgb(201, 102, 102);
+} 
+td:nth-child(3n-3){
+    color: rgb(123, 102, 201);
+}*/
+
+/*  */
+
+p:only-child{
+    color: cadetblue;
+}
+
+td{
+    border: 1px dashed green;
+}
+
+div:has(p){
+    color:brown;
+}
+
+
+/* 
+div:empty{
+    background-color: green;
+} */
+
+
+#abc:target{
+    background-color: blue;
+}
+
+input:checked{
+    color: black;
+    border: 10px dotted groove;
+transform: scale(2);
+
+}
+
+
+p{
+    font-size: 20px;
+}
+
+p::first-letter{
+    font-size: 30px;
+}
+
+p::first-line{
+    color:green;
+}
+
+p::selection{
+    background-color: khaki;
+    color: brown;
+    font-weight: bold;
+}
+
+input::placeholder{
+    color:blue;
+}
+
+.demo{
+    position: relative;
+}
+
+.demo::before{
+    position: absolute;
+    content: "";
+    
+    border:1px solid black;
+    width: 0px;
+    top:30px;
+    left:50px;
+    
+    transition: 0.5s ease-in-out;
+}
+
+.demo:hover::before{
+    width: 100px;
+    left:0;
+}
+
+/* .demo::after{
+    content: "demo test last";
+} */
+
+.demo2{
+    text-decoration: none;
+    transition: .5s ease-in;
+}
+
+.demo2:hover{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.box{
+    width:200px;
+    height: 200px;
+    /* overflow: hidden; */
+}
+
+.box img{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+
+    opacity: 50%;
+
+    position: relative;
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    width:200px;
+    height: 200px;
+    background-color: aqua;
+
+   
+}
+
+.triangle{
+    width: 0px;
+    height: 0px;
+    position: relative;
+    left: 50px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+.triangle::before{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -50px;
+    top: 74px;
+    content: "";
+    border-bottom: 27px solid white;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.triangle::after{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: -59px;
+    border-top: 44px solid red;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+}

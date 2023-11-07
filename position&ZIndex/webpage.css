@@ -1,0 +1,126 @@
+.container {
+    width: 100%;
+    height: 3000px;
+}
+
+.h1 {
+    position: sticky;
+    top: 0;
+    margin: 0;
+    width: 1250px;
+    height: 50px;
+    
+    margin-left: 40px;
+    background-image: linear-gradient(34deg,rgb(236, 223, 223),rgb(117, 84, 84),rgb(83, 54, 54));
+}
+.color{
+
+    height: 80px;
+    width: 1250px;
+
+    margin-left: 40px;
+    /* background-color:rgb(152, 152, 194); */
+    background-image: linear-gradient(to right, rgb(163, 42, 133),rgb(50, 105, 105), rgb(163, 42, 133));
+    
+}
+
+.h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+}
+
+.h4 {
+    margin: 0;
+    text-align: center;
+    color: rgb(7, 32, 78);
+    font-size: 20px;
+}
+
+.box {
+    width: 1250px;
+    margin-left: 40px;
+    height: 550px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right,cadetblue,rgb(10, 35, 36));
+}
+
+.box2 {
+    width: 1250px;
+    margin-left: 40px;
+    height: 750px;
+    box-sizing: border-box;
+    
+    background-image: linear-gradient(to left, rgb(126, 77, 133), rgb(199, 76, 137), rgb(66, 147, 172));
+    /* background-image: radial-gradient(rgb(126, 77, 133), rgb(199, 76, 137) , rgb(66, 147, 172) 70% ); */
+}
+
+.product {
+    z-index: 99;
+    margin-left: 40px;
+    width: 1250px;
+    height: 1850px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to left, rgb(50, 148, 187), cadetblue, rgb(94, 94, 136));
+
+}
+
+.width {
+    width: 1250px;
+    margin-left: 40px;
+    height: 400px;
+    background-image: linear-gradient(to right,cadetblue,rgb(10, 35, 36));
+
+}
+
+.float {
+    float: left;
+}
+
+.Location {
+    background-image: linear-gradient(black, grey, black);
+    width: 1250px;
+    height: 600px;
+    color: white;
+    margin-left: 40px;
+}
+
+.hr {
+    color: white;
+    width: 200px;
+}
+
+.ul {
+    text-align: center;
+    font-size: larger;
+    color: white;
+    list-style-type: none;
+    margin-left: 90px;
+    margin-right: 50px;
+}
+
+ol {
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+
+.p {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+
+.p1 {
+    text-align: center;
+    font-size:19px;
+
+}
+
+
+.img {
+    z-index: 1;
+    position: relative;
+    left: 480px;
+}

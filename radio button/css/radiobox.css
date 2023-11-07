@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Dancing+Script:wght@500;700&family=Lobster&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-flow{
+    flex-direction: column;
+}
+
+.just-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.main-font{
+    font-family: 'Poppins', sans-serif;
+}
+    
+.border1{
+    height: 610px;
+    width: 100%;
+    border: 25px solid #8d64e4;
+    
+}
+
+.border2{
+    height: 560px;
+    width: 100%;
+    border-width: 28px 20px;
+    border-color: #b299ed;
+    border-style: solid;
+}
+
+.label{
+    width: 180px;
+    height: 220px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0px 20px gray;
+    border-radius: 10px;
+    margin: 100px 20px 20px 20px ;
+    position: relative;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.margin-top40{
+    margin-top: 40px;
+}
+
+.i{
+    transform: scale(3);
+    text-align: center;
+    color: #8373e6;
+    position: absolute;
+    top: 90px;
+    left: 70px;
+}
+
+i + span{
+    position: absolute;
+    top: 160px;
+    left: 55px;
+    color: #8373e6;
+
+}
+
+.radio{
+    visibility: hidden;
+}
+
+.check{
+    position: absolute;
+    left: 80px;
+    top: -2px;
+    background-color: white;
+    border: 1px solid ;
+    border-radius: 50%;
+    opacity: 0;
+    color: #8d64e4;
+    transform: scale(1.67);
+}
+input[type="radio"]:checked + .label{
+    border: 3px solid #8d64e4;
+
+}
+
+input[type="radio"]:checked + .label .check{
+    /* display: block; */
+    opacity: 1;
+    scale: 1.2;
+    transition: .2s ease-in-out;
+
+}
+
+.lion{
+    display: inline-block;
+    position: relative;
+    color: red;
+}
+
+.lion::after{
+    
+    content: "";
+    position: absolute;
+    width:100%;
+    transform: scaleX(0);
+    height:2px;
+    bottom:0;
+    left:0;
+    background-color: rgb(197, 26, 26);
+    transform-origin: bottom left;
+    transition:transform .5s ease-in-out;
+
+
+}
+
+.lion:hover::after{
+    /* width: 100%; */
+
+    
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+
+/* try */
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
